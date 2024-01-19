@@ -8,10 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.id = `video${index + 1}`;
-    checkbox.checked = localStorage.getItem(`video${index + 1}`) === "true";
+    checkbox.checked =
+      localStorage.getItem(`flutterVideo${index + 1}`) === "true";
 
     checkbox.addEventListener("change", function () {
-      localStorage.setItem(`video${index + 1}`, checkbox.checked);
+      localStorage.setItem(`flutterVideo${index + 1}`, checkbox.checked);
     });
 
     const label = document.createElement("label");
