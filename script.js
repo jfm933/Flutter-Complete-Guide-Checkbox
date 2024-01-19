@@ -7,11 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
   function createCheckbox(title, index) {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
+    // Use a course-specific key for localStorage (e.g., 'reactVideo' or 'flutterVideo')
+    // Change 'reactVideo' to match the course you're taking
     checkbox.id = `video${index + 1}`;
     checkbox.checked =
       localStorage.getItem(`flutterVideo${index + 1}`) === "true";
 
     checkbox.addEventListener("change", function () {
+      // Use a course-specific key for localStorage (e.g., 'reactVideo' or 'flutterVideo')
+      // Change 'reactVideo' to match the course you're taking
       localStorage.setItem(`flutterVideo${index + 1}`, checkbox.checked);
     });
 
@@ -32,7 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const checkbox = document.getElementById(`video${i}`);
       if (checkbox) {
         checkbox.checked = false;
-        localStorage.setItem(`video${i}`, false);
+        // Use a course-specific key for localStorage (e.g., 'reactVideo' or 'flutterVideo')
+        // Change 'reactVideo' to match the course you're taking
+        localStorage.setItem(`flutterVideo${i}`, false);
       }
     }
 
@@ -41,7 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const checkbox = document.getElementById(`video${i}`);
       if (checkbox) {
         checkbox.checked = true;
-        localStorage.setItem(`video${i}`, true);
+        // Use a course-specific key for localStorage (e.g., 'reactVideo' or 'flutterVideo')
+        // Change 'reactVideo' to match the course you're taking
+        localStorage.setItem(`flutterVideo${i}`, true);
       }
     }
   }
