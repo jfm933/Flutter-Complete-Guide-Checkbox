@@ -1,7 +1,7 @@
-import { videoTitlesData } from "./data.js";
+import { flutterVideoTitlesData } from "./data.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-  const videoTitles = videoTitlesData;
+  const videoTitles = flutterVideoTitlesData;
   const videoList = document.getElementById("videoList");
 
   function createCheckbox(title, index) {

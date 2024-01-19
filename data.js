@@ -1,4 +1,4 @@
-export const videoTitlesData = [
+export const flutterVideoTitlesData = [
   "Welcome To This Course!",
   "What Is Flutter?",
   "Flutter uses Dart!",
